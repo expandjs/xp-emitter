@@ -21,9 +21,10 @@
     /*********************************************************************/
 
     /**
-     * TODO DOC
+     * This class is used to provide event emitting functionalities.
      *
      * @class XPEmitter
+     * @description This class is used to provide event emitting functionalities.
      */
     module.exports = new XP.Class('XPEmitter', {
 
