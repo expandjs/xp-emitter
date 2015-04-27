@@ -2,7 +2,7 @@
   "name": "xp-emitter",
   "license": "BSD-3-Clause",
   "description": "This class is used to provide event emitting functionalities.",
-  "version": "0.8.3",
+  "version": "0.8.4",
   "homepage": "https://github.com/ExpandJS/xp-emitter",
   "author": "ExpandJS <dev@expandjs.com> (http://www.expandjs.com)",
   "contributors": [
@@ -19,6 +19,7 @@
     "expandjs": "*"
   },
   "scripts": {
-    "browserify": "browserify index -i expandjs > dist/xp-emitter.js"
+    "browserify": "browserify index -i expandjs > dist/xp-emitter.js",
+    "browserify-min": "browserify -d index -i expandjs -p [minifyify --map xp-emitter.min.map --output dist/xp-emitter.min.map] > dist/xp-emitter.min.js"
   }
 }
