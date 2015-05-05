@@ -16,7 +16,8 @@
   },
   "dependencies": {
     "eventemitter3": "^0.1.0",
-    "expandjs": "*"
+    "expandjs": "*",
+    "xp-load": "*"
   },
   "scripts": {
     "browserify": "browserify index -i expandjs > dist/xp-emitter.js",
