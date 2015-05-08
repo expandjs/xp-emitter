@@ -38,7 +38,7 @@
     XP.browserify(module.exports, 'XPEmitter');
 
 }());
-},{"eventemitter3":3,"expandjs":1,"xp-load":5}],3:[function(require,module,exports){
+},{"eventemitter3":3,"expandjs":1,"xp-load":4}],3:[function(require,module,exports){
 'use strict';
 
 /**
@@ -273,9 +273,7 @@ module.exports = EventEmitter;
 /*jslint browser: true, devel: true, node: true, ass: true, nomen: true, unparam: true, indent: 4 */
 
 module.exports = require('./lib');
-},{"./lib":2}],5:[function(require,module,exports){
-arguments[4][4][0].apply(exports,arguments)
-},{"./lib":6,"dup":4}],6:[function(require,module,exports){
+},{"./lib":5}],5:[function(require,module,exports){
 /*jslint browser: true, devel: true, node: true, ass: true, nomen: true, unparam: true, indent: 4 */
 
 (function (window) {
@@ -294,4 +292,6 @@ arguments[4][4][0].apply(exports,arguments)
     };
 
 }(typeof window !== 'undefined' ? window : null));
-},{}]},{},[4]);
+},{}],6:[function(require,module,exports){
+arguments[4][4][0].apply(exports,arguments)
+},{"./lib":2,"dup":4}]},{},[6]);
