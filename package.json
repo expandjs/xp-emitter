@@ -2,7 +2,7 @@
   "name": "xp-emitter",
   "license": "BSD-3-Clause",
   "description": "This class is used to provide event emitting functionalities.",
-  "version": "0.8.6",
+  "version": "0.8.7",
   "homepage": "https://github.com/ExpandJS/xp-emitter",
   "author": "ExpandJS <dev@expandjs.com> (http://www.expandjs.com)",
   "contributors": [
