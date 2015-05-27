@@ -20,8 +20,8 @@
     "xp-load": "*"
   },
   "scripts": {
-    "build": "browserify index -i expandjs > dist/xp-emitter.js --standalone XPEmitter && npm run build:min",
-    "build:min": "browserify -d index -i expandjs -p [minifyify --map xp-emitter.min.map --output dist/xp-emitter.min.map] > dist/xp-emitter.min.js --standalone XPEmitter"
+    "build": "browserify index -i expandjs --standalone XPEmitter > dist/xp-emitter.js && npm run build:min",
+    "build:min": "browserify -d index -i expandjs --standalone XPEmitter -p [minifyify --map xp-emitter.min.map --output dist/xp-emitter.min.map] > dist/xp-emitter.min.js"
   },
   "keywords": [
       "expandjs",
