@@ -1,6 +1,7 @@
 (function(f){if(typeof exports==="object"&&typeof module!=="undefined"){module.exports=f()}else if(typeof define==="function"&&define.amd){define([],f)}else{var g;if(typeof window!=="undefined"){g=window}else if(typeof global!=="undefined"){g=global}else if(typeof self!=="undefined"){g=self}else{g=this}g.XPEmitter = f()}})(function(){var define,module,exports;return (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 
 },{}],2:[function(require,module,exports){
+(function (global){
 /*jslint browser: true, devel: true, node: true, ass: true, nomen: true, unparam: true, indent: 4 */
 
 /**
@@ -10,12 +11,12 @@
  * The complete set of authors may be found at https://expandjs.github.io/AUTHORS.txt
  * The complete set of contributors may be found at https://expandjs.github.io/CONTRIBUTORS.txt
  */
-(function () {
+(function (global) {
     "use strict";
 
     // Vars
     var eventemitter3 = require('eventemitter3'),
-        XP            = require('expandjs');
+        XP            = global.XP || require('expandjs');
 
     /*********************************************************************/
 
@@ -31,7 +32,8 @@
         extends: eventemitter3
     });
 
-}());
+}(typeof window !== "undefined" ? window : global));
+}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{"eventemitter3":3,"expandjs":1}],3:[function(require,module,exports){
 'use strict';
 
