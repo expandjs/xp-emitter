@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "eventemitter3": "^0.1.0",
-    "expandjs": "*"
+    "expandjs": "^0.8.12"
   },
   "scripts": {
     "build": "browserify index -i expandjs --standalone XPEmitter > dist/xp-emitter.js && npm run build:min",
