@@ -1,8 +1,8 @@
 {
   "name": "xp-emitter",
   "license": "BSD-3-Clause",
-  "version": "0.8.12",
-  "description": "This class is used to provide event emitting functionalities.",
+  "version": "0.9.0",
+  "description": "This class is used to provide event emitting functionalities",
   "homepage": "http://expandjs.com/classes/xp-emitter",
   "authors": [
     "Giuliano Rullo <g.rullo@expandjs.com>",
